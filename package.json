@@ -1,17 +1,20 @@
 {
-  "name": "ember-pdfjs",
+  "name": "@abcum/ember-pdfjs",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "An addon for working with pdf.js in an Ember.js app.",
   "keywords": [
     "ember-addon"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Tobie Morgan Hitchcock",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abcum/ember-pdfjs.git"
+  },
   "scripts": {
     "build": "ember build",
     "start": "ember serve",
