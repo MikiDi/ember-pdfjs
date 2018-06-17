@@ -1,0 +1,220 @@
+body {
+	tab-size:4;
+	color:#333333;
+	line-height:1.7;
+	font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+*, *:before, *:after {
+	outline:none;
+	cursor:default;
+	user-drag:none;
+	user-select:none;
+	box-sizing:border-box;
+	-webkit-tap-highlight-color: transparent;
+}
+
+a {
+	color:#EF5753;
+	text-decoration:none;
+}
+
+p {
+	margin:25px 0 25px 0;
+}
+
+h1 {
+	font-size:32px;
+	font-weight:bold;
+	margin:75px 0 0 0;
+}
+
+h2 {
+	font-size:22px;
+	font-weight:bold;
+	margin:75px 0 0 0;
+}
+
+h3 {
+	font-size:16px;
+	font-weight:bold;
+	margin:30px 0 0 0;
+}
+
+h4 {
+	font-size:12px;
+	margin:30px 0 0 0;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+
+code {
+	padding:3px;
+	background-color:#fafafa;
+}
+
+/*
+------------------------------
+MENU
+------------------------------
+*/
+
+.menu {
+	top:0;
+	left:0;
+	bottom:0;
+	width:300px;
+	position:fixed;
+	background-color:#f5f5f5;
+	border-right:2px solid #efefef;
+}
+
+.menu > .name {
+	cursor:default;
+	font-size:24px;
+	margin:50px 0 0 0;
+	text-align:center;
+}
+
+.menu > .link {
+	cursor:default;
+	font-size:16px;
+	text-align:center;
+}
+
+.menu > .line {
+	width:100%;
+	margin:50px 0 0 0;
+	border-bottom:2px solid #eaeaea;
+}
+
+.menu > .sect {
+	padding:30px;
+	font-size:14px;
+	margin:5px 0 0 0;
+}
+
+.menu > .sect > .link {
+	line-height:36px;
+}
+
+.menu > .sect > .link > .link {
+	padding-left:20px;
+}
+
+.menu > .sect .link a {
+	color:#555555;
+	font-size:17px;
+}
+
+.menu > .sect > .link a:hover {
+	color:#000000;
+}
+
+.menu:after {
+	width:100%;
+	bottom:15px;
+	color:#cccccc;
+	display:block;
+	font-size:14px;
+	position:absolute;
+	text-align:center;
+	content:"© 2018 Abcum Ltd";
+}
+
+/*
+------------------------------
+MAIN
+------------------------------
+*/
+
+.main {
+	top:0;
+	left:300px;
+	right:0;
+	bottom:0;
+	position:absolute;
+}
+
+.main > .body {
+	width:850px;
+	padding:0 0 50px 0;
+	margin:0 auto 0 auto;
+}
+
+.main > .body::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.main > .body > .view {
+	width:100%;
+	padding:30px;
+	position:relative;
+	margin:30px 0 30px 0;
+	border:3px solid #efefef;
+}
+
+.main > .body > .slab {
+	width:100%;
+	padding:30px;
+	overflow:auto;
+	position:relative;
+	margin:30px 0 30px 0;
+	background-color:#fafafa;
+	border:3px solid #efefef;
+}
+
+.main > .body > .area {
+	width:100%;
+	overflow:auto;
+	position:relative;
+	margin:30px 0 30px 0;
+	border:3px solid #efefef;
+	box-sizing:content-box;
+}
+
+.main > .body > .size-200 {
+	height:200px;
+}
+
+.main > .body > .size-300 {
+	height:300px;
+}
+
+.main > .body > .size-400 {
+	height:400px;
+}
+
+.main > .body > .size-600 {
+	height:600px;
+}
+
+.main > .body > .size-900 {
+	height:900px;
+}
+
+.main > .body > .sect {
+	width:100%;
+	margin:50px 0 50px 0;
+}
+
+.main > .body > .sect::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.main > .body > .sect > .text {
+	width:385px;
+	height:300px;
+}
+
+.main > .body > .sect > .view {
+	float:right;
+	width:400px;
+	height:300px;
+	padding:15px;
+	border:3px solid #efefef;
+}

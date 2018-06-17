@@ -1,0 +1,9 @@
+<canvas id="pdf-main" class="{{if display 'display'}} {{if loading 'loading'}}"></canvas>
+<canvas id="pdf-temp" class="{{if display 'display'}} {{if loading 'loading'}}"></canvas>
+
+{{#if loading}}
+	<pdf-load>
+		<div></div>
+		<div></div>
+	</pdf-load>
+{{/if}}

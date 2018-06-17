@@ -1,5 +1,13 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<div class="menu">
+	<div class="name">ember-pdfjs</div>
+	<div class="link"><a href="https://github.com/abcum/ember-pdfjs">github.com</a></div>
+	<div class="line"></div>
+	<div class="sect">
+		<div class="link">{{#link-to 'index'}}Introduction{{/link-to}}</div>
+		<div class="link">{{#link-to 'pdfjs'}}PDF.js{{/link-to}}</div>
+	</div>
+</div>
 
-{{outlet}}
+<div class="main">
+	{{outlet}}
+</div>
