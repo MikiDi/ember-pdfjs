@@ -1,50 +1,25 @@
-@abcum/ember-pdfjs
-==============================================================================
+# ember-pdfjs
 
-[Short description of the addon.]
+An addon for working with PDFs using pdfjs in an Ember.js app.
 
-Installation
-------------------------------------------------------------------------------
+[![](https://img.shields.io/circleci/project/abcum/ember-pdfjs/master.svg?style=flat-square)](https://circleci.com/gh/abcum/ember-pdfjs) [![](https://img.shields.io/npm/v/@abcum/ember-pdfjs.svg?style=flat-square)](https://www.npmjs.com/package/@abcum/ember-pdfjs) [![](https://img.shields.io/badge/ember-2.16.1+-orange.svg?style=flat-square)](https://github.com/abcum/ember-pdfjs) [![](https://david-dm.org/abcum/ember-pdfjs/status.svg?style=flat-square)](https://david-dm.org/abcum/ember-pdfjs) [![](https://david-dm.org/abcum/ember-pdfjs/dev-status.svg?style=flat-square)](https://david-dm.org/abcum/ember-pdfjs?type=dev) [![](https://img.shields.io/badge/license-MIT-00bfff.svg?style=flat-square)](https://github.com/abcum/ember-pdfjs) 
 
-```
-ember install @abcum/ember-pdfjs
-```
-
-
-Usage
-------------------------------------------------------------------------------
-
-[Longer description of how to use the addon in apps.]
-
-
-Contributing
-------------------------------------------------------------------------------
+## Usage
 
 ### Installation
 
-* `git clone <repository-url>`
-* `cd @abcum/ember-pdfjs`
-* `npm install`
+`ember install @abcum/ember-pdfjs`
 
-### Linting
+### Introduction
 
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
+The ember-pdfjs addon adds functionality for working with PDFs using pdfjs, enabling advanced PDF rendering.
 
-### Running tests
+### Examples
 
-* `ember test` – Runs the test suite on the current Ember version
-* `ember test --server` – Runs the test suite in "watch mode"
-* `npm test` – Runs `ember try:each` to test your addon against multiple Ember versions
+Coming soon...
 
-### Running the dummy application
+## Development
 
-* `ember serve`
-* Visit the dummy application at [http://localhost:4200](http://localhost:4200).
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
-
-License
-------------------------------------------------------------------------------
-
-This project is licensed under the [MIT License](LICENSE.md).
+- `make install` (install bower and ember-cli dependencies)
+- `make upgrade` (upgrade ember-cli to the specified version)
+- `make tests` (run all tests defined in the package)
