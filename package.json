@@ -1,6 +1,6 @@
 {
   "name": "@abcum/ember-pdfjs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An addon for working with PDFs using pdfjs in an Ember.js app.",
   "keywords": [
     "ember-addon"
