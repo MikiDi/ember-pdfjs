@@ -15,8 +15,8 @@ export default Component.extend(ResizeMixin, {
 		this._super(...arguments);
 
 		let s = this.get('spacing');
-		let w = this.$().width();
-		let h = this.$().height();
+		let w = this.element.offsetWidth;
+		let h = this.element.offsetHeight;
 
 		this.set('width', w-s);
 		this.set('height', h-s);
@@ -28,8 +28,8 @@ export default Component.extend(ResizeMixin, {
 		this._super(...arguments);
 
 		let s = this.get('spacing');
-		let w = this.$().width();
-		let h = this.$().height();
+		let w = this.element.offsetWidth;
+		let h = this.element.offsetHeight;
 
 		this.set('width', w-s);
 		this.set('height', h-s);

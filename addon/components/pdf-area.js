@@ -87,8 +87,8 @@ export default Component.extend({
 			let s = Math.min(ww/pw, wh/ph);
 
 			var vwp = pge.getViewport(s);
-			var ons = this.$('canvas#pdf-main')[0];
-			var can = this.$('canvas#pdf-temp')[0];
+			var ons = document.querySelectorAll('canvas#pdf-main')[0];
+			var can = document.querySelectorAll('canvas#pdf-temp')[0];
 			var ctx = can.getContext('2d');
 			can.height = vwp.height;
 			can.width = vwp.width;

@@ -17,21 +17,17 @@ default:
 	@echo "Choose a Makefile target:"
 	@$(MAKE) -pRrq -f $(lastword $(MAKEFILE_LIST)) : 2>/dev/null | awk -v RS= -F: '/^# File/,/^# Finished Make data base/ {if ($$1 !~ "^[#.]") {print "  - " $$1}}' | sort
 
+.PHONY: clean
+clean:
+	@echo "Clean..."
+	rm -rf node_modules dist tmp
+
+.PHONY: setup
+setup:
+	@echo "Setup..."
+	npm install
+
 .PHONY: tests
 tests:
 	@echo "Tests..."
 	npm test
-
-.PHONY: install
-install:
-	@echo "Installing..."
-	rm -rf node_modules dist tmp
-	npm install
-
-.PHONY: upgrade
-upgrade:
-	@echo "Upgrading..."
-	rm -rf node_modules dist tmp
-	npm install --save-dev ember-cli@3.1.3
-	npm install
-	ember init

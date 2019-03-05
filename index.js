@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  name: '@abcum/ember-pdfjs',
+  name: require('./package').name,
   included(app) {
     this._super.included(app);
     app.import('node_modules/pdfjs-dist/build/pdf.min.js', {
