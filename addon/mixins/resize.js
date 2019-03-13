@@ -13,13 +13,13 @@ export default Mixin.create({
 
 		this._super(...arguments);
 
-		window.addEventListener('resize', this.didResizeHandler);
+		window.addEventListener('resize', this.didResizeHandler.bind(this));
 
 	},
 
 	willDestroyElement() {
 
-		window.removeEventListener('resize', this.didResizeHandler);
+		window.removeEventListener('resize', this.didResizeHandler.bind(this));
 
 		this._super(...arguments);
 
